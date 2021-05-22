@@ -1,0 +1,32 @@
+npm init -y : create package.json
+npm install cors express nodemon socket.io
+
+Backend:
+////create index.js
+nodemon index.js
+////error : not found nodemon, install globally
+npm install -g nodemon
+nodemon index.js : server started
+
+Frontend:
+npx create-react-app ./client : create reactapp inside client folder
+npm install @material-ui/core @material-ui/icons react-copy-to-clipboard simple-peer socket.io-client
+///delete src folder inside client as src has lot of unnecessary files
+///create new empty src folder
+///create file index.js inside src
+///create styles.css in src 
+////create App.js in src
+cd ./client/
+npm start
+
+////create components folder and 3 components inside it
+////VideoPlayer.jsx, Notifications.jsx, Options.jsx
+///create SocketContext.js
+
+////in options , inside onClick we are using arrow function because:
+////if we only put onClick={callUser(idToCall)} it will call automatically
+///but if we put onClick={() => callUser(idToCall)}, then it will not
+
+
+///to deploy in heroku
+///create Procfile
